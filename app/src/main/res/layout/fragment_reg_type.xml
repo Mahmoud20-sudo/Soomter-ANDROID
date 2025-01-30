@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".CountriesFragment">
+
+    <ImageView
+        android:id="@+id/bck_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:rotation="180"
+        android:src="@mipmap/back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/institute_icon" />
+
+        <TextView
+            android:id="@+id/build_reg_txt"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rouned_view"
+            android:gravity="center"
+            android:text="@string/institue_reg"
+            android:textColor="#ECD493"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/person_icon" />
+
+        <TextView
+            android:id="@+id/persons__reg_txt"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rouned_view"
+            android:gravity="center"
+            android:text="@string/person_reg"
+            android:textColor="#ECD493"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

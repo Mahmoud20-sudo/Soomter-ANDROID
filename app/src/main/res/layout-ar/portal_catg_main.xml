@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/bck_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="3dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/cat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-2dp"
+            android:text="@string/the_categories"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/four_fots"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:src="@mipmap/four_dots" />
+
+
+        <ImageView
+            android:id="@+id/gear"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/four_fots"
+            android:src="@mipmap/gear_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_grey_view">
+
+        <ImageView
+            android:id="@+id/ss"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:rotation="90"
+            android:src="@mipmap/search_icon"
+            android:tint="#96969B" />
+
+        <ImageView
+            android:id="@+id/vii"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="9dp"
+            android:layout_toLeftOf="@+id/ss"
+            android:background="#D9B878" />
+
+        <EditText
+            android:id="@+id/serch_ed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="-5dp"
+            android:layout_toLeftOf="@+id/vii"
+            android:layout_toRightOf="@+id/settings_img"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="@string/search"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="1dp"
+            android:textColor="#96969B"
+            android:textColorHint="#96969B"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:id="@+id/settings_img"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/options_icon"
+            android:tint="#9A9A9E" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/pagerIndicator"
+            android:clipToPadding="false"
+            android:layout_marginTop="0dp" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/pagerIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+             />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_toLeftOf="@+id/parent"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/cancel"
+        />
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dialog_rounded_bg"
+        android:minWidth="280dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/write_rating"
+            android:textColor="#808285"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#E1C693" />
+
+        <TextView
+            android:id="@+id/product_sismilar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"
+            android:text="@string/advntgs"
+            android:textColor="#E1C693"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/advntg_ed"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_white_view"
+            android:backgroundTint="#EFF0F3"
+            android:gravity="left"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/disadvntgs_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"
+            android:text="@string/disadvntgs"
+            android:textColor="#E1C693"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/disadvntgs_ed"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_white_view"
+            android:backgroundTint="#EFF0F3"
+            android:gravity="left"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/comment_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"
+            android:text="@string/comment"
+            android:textColor="#E1C693"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/comment_ed"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_white_view"
+            android:backgroundTint="#EFF0F3"
+            android:gravity="left"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_white_view2"
+            android:backgroundTint="#000000"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:text="@string/send"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+</RelativeLayout>

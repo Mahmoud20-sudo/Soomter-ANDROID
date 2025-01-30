@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:background="@android:color/transparent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/desc_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text=""
+        android:textColor="#606060"
+        android:textSize="12.5sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:background="#D9B878" />
+
+    <TextView
+        android:id="@+id/product_adv_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/product_advntgs"
+        android:textColor="#494949"
+        android:textSize="14sp" />
+
+    <!--606060  12.5sp-->
+    <LinearLayout
+        android:id="@+id/avntgs_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <TextView
+        android:id="@+id/product_sismilar_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/product_similar"
+        android:textColor="#494949"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:weightSum="1.2">
+
+        <ImageView
+            android:id="@+id/lef_arrow"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="0.1"
+            android:rotation="180"
+            android:src="@mipmap/arrow" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/product_similar_rv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:elevation="5dp"
+            android:paddingTop="1dp" />
+
+        <ImageView
+            android:id="@+id/right_arrow"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:src="@mipmap/arrow" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,204 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/catgs_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/the_categories"
+        android:textColor="#323232"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/catgs_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="3dp"
+        android:paddingTop="10dp"
+        android:scrollbars="none"
+        android:visibility="visible"
+        tools:layout="@layout/cardview_item" />
+
+    <TextView
+        android:id="@+id/ads_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/the_ads"
+        android:textColor="#323232"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ads_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="3dp"
+        android:paddingTop="10dp"
+        android:scrollbars="none"
+        android:visibility="visible"
+        tools:layout="@layout/cardview_item" />
+
+    <TextView
+        android:id="@+id/cities_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/the_cities"
+        android:textColor="#323232"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cities_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="3dp"
+        android:paddingTop="10dp"
+        android:scrollbars="none"
+        android:visibility="visible"
+        tools:layout="@layout/cardview_item" />
+
+    <RadioGroup
+        android:id="@+id/rgp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_filled_view"
+        android:backgroundTint="@android:color/white"
+        android:checkedButton="@+id/sound"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2.01">
+
+        <RadioButton
+            android:id="@+id/georgian_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.2"
+            android:buttonTint="@color/colorAccent"
+            android:checked="true"
+            android:gravity="right|center_vertical"
+            android:text="@string/georgian"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.01"
+            android:background="#F5F5F5" />
+
+        <RadioButton
+            android:id="@+id/hijri_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.8"
+            android:buttonTint="@color/colorAccent"
+            android:text="@string/hijri"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/fromdate_ed_prnt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_weight="1">
+
+            <AutoCompleteTextView
+                android:id="@+id/fromdate_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E1C79B"
+                android:gravity="right"
+                android:hint="@string/from_date"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:textColor="#323232" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/todate_ed_prnt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1">
+
+            <AutoCompleteTextView
+                android:id="@+id/todate_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E1C79B"
+                android:gravity="right"
+                android:hint="@string/to_date"
+                android:textSize="15sp"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#323232" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/serch_save"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_filled_view"
+        android:backgroundTint="#000000"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:text="@string/save"
+        android:textColor="@color/colorAccent" />
+
+</LinearLayout>

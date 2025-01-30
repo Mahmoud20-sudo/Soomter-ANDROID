@@ -1,0 +1,243 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:fillViewport="true"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/black"
+        android:paddingBottom="3dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/bck_btn"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="3dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/recover_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-6dp"
+            android:text="@string/recover"
+            android:textColor="#f4f4f4"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/four_fots"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:src="@mipmap/four_dots" />
+
+
+        <ImageView
+            android:id="@+id/gear"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/four_fots"
+            android:src="@mipmap/gear_icon" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@android:color/white"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="0dp">
+
+        <RadioGroup
+            android:id="@+id/rgp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:checkedButton="@+id/sound"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/forget_pass_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#5E5F5F"
+                android:buttonTint="@color/colorAccent"
+                android:checked="true"
+                android:gravity="right|center_vertical"
+                android:layoutDirection="ltr"
+                android:text="@string/forgot_password"
+                android:textSize="15sp"  />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#F5F5F5" />
+
+            <RadioButton
+                android:id="@+id/forget_user_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#5E5F5F"
+                android:layout_marginTop="10dp"
+                android:buttonTint="@color/colorAccent"
+                android:checked="true"
+                android:gravity="right|center_vertical"
+                android:layoutDirection="ltr"
+                android:text="@string/forgot_user"
+                android:textSize="15sp"  />
+
+        </RadioGroup>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/choose_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:maxLines="1"
+        android:text="@string/choose_send_op"
+        android:textColor="#323232"
+        android:textSize="17sp" />
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <RadioGroup
+                android:id="@+id/send_rgp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/sound"
+                android:layoutDirection="ltr"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/mail_verify_rb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#5E5F5F"
+                    android:buttonTint="@color/colorAccent"
+                    android:checked="true"
+                    android:gravity="right|center_vertical"
+                    android:layoutDirection="ltr"
+                    android:text="@string/mail_verify"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#F5F5F5" />
+
+                <RadioButton
+                    android:id="@+id/mobile_sms_rb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/colorAccent"
+                    android:checked="true"
+                    android:gravity="right|center_vertical"
+                    android:textColor="#5E5F5F"
+                    android:layoutDirection="ltr"
+                    android:text="@string/mobile_sms"
+                    android:textSize="15sp" />
+            </RadioGroup>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_margin="20dp"
+        android:background="@android:color/white"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="0dp">
+
+        <EditText
+            android:id="@+id/input_verify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="right|center_vertical"
+            android:hint="@string/mobile"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="#999999"
+            android:textColorHint="#999999"
+            android:textSize="15sp" />
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_filled_view"
+        android:backgroundTint="#000000"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:text="@string/send"
+        android:textColor="@color/colorAccent" />
+
+</LinearLayout>

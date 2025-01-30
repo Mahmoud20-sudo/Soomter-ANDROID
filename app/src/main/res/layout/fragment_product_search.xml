@@ -1,0 +1,210 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/product_price_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="@string/prod_price"
+            android:textColor="#323232"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/product_rial_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:layout_marginLeft="2dp"
+            android:text="@string/the_rial"
+            android:textColor="#717375"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+        android:id="@+id/rangeSeekbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="0dp"
+        android:elevation="5dp"
+        app:bar_color="#D5D7D8"
+        app:bar_highlight_color="#D9BB78"
+        app:corner_radius="5"
+        app:data_type="_integer"
+        app:gap="5"
+        app:left_thumb_color="#FFFFFF"
+        app:left_thumb_color_pressed="#FFFFFF"
+        app:max_value="10000"
+        app:min_value="5"
+        app:right_thumb_color="#FFFFFF"
+        app:right_thumb_color_pressed="#FFFFFF" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="5 ريال"
+            android:textColor="#5e5e5f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="10000 ريال"
+            android:textColor="#5e5e5f"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2.2">
+
+        <TextView
+            android:id="@+id/from_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="@string/from"
+            android:textColor="#5e5e5f"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/from_ed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@drawable/rounded_white_view3"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:textColor="#5e5e5f"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/to_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="#5e5e5f"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:text="@string/to"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/to_ed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@drawable/rounded_white_view3"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textColor="#5e5e5f"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/trad_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/trade"
+        android:textColor="#323232"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/trade_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="3dp"
+        android:paddingTop="10dp"
+        android:scrollbars="none"
+        tools:layout="@layout/cardview_item" />
+
+    <TextView
+        android:id="@+id/type_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/type"
+        android:textColor="#323232"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/type_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="3dp"
+        android:paddingTop="10dp"
+        android:scrollbars="none"
+        android:visibility="gone"
+        tools:layout="@layout/cardview_item" />
+
+    <Button
+        android:id="@+id/serch_save"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_filled_view"
+        android:backgroundTint="#000000"
+        android:gravity="center"
+        android:text="@string/save"
+        android:textColor="@color/colorAccent" />
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<!-- A CardView that contains a TextView -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_weight="1"
+    android:background="@drawable/rounded_white_view"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/product_label"
+        android:layout_width="60dp"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bottom_rounded_white_view3"
+        android:backgroundTint="#FFDC92"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:text="خصم 20%"
+        android:textColor="#51514F"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:id="@+id/product_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/test_phone" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="13dp"
+        android:gravity="right"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="ابل ايفون X مع فايس تايم 64 جيجا"
+        android:textColor="#221f1f"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/rounded_white_view2"
+        android:backgroundTint="#FFDC92"
+        android:paddingTop="-3dp"
+        android:gravity="right"
+        android:paddingLeft="15dp"
+        android:paddingRight="7dp"
+        android:text="2500 ريال"
+        android:textColor="#51514F"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/fav_img"
+            android:layout_width="0dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/fav_star"
+            />
+
+        <ImageView
+            android:id="@+id/addtocart_img"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:src="@mipmap/grey_cart" />
+
+        <ProgressBar
+            android:id="@+id/loadmore_progress"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="28dp" />
+
+        <ImageView
+            android:id="@+id/share_img"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:src="@mipmap/share" />
+
+    </LinearLayout>
+
+</LinearLayout>

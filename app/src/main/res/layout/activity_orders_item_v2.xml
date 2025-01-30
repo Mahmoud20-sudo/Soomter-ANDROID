@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/first_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+
+    android:weightSum="3">
+
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="5dp">
+
+        <RelativeLayout
+            android:id="@+id/cat_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/etisalat_compnies_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/etisalat_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:alpha="0.65"
+                android:background="@drawable/corners_edges_view"
+                android:gravity="center"
+                android:paddingBottom="25dp"
+                android:paddingLeft="0dp"
+                android:layout_marginRight="15dp"
+                android:paddingRight="0dp"
+                android:paddingTop="25dp"
+                android:text="@string/etisalat"
+                android:textColor="#D9B878"
+                android:textSize="10sp" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/etisalat_compnies_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/wood_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:alpha="0.65"
+                android:background="@drawable/corners_edges_view"
+                android:gravity="center"
+                android:paddingBottom="25dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:layout_marginRight="15dp"
+                android:paddingTop="25dp"
+                android:text="@string/wood_frun"
+                android:textColor="#D9B878"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/etisalat_compnies_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/elecdev_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:alpha="0.65"
+                android:background="@drawable/corners_edges_view"
+                android:gravity="center"
+                android:paddingBottom="25dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="11dp"
+                android:layout_marginRight="15dp"
+                android:paddingTop="25dp"
+                android:text="@string/wood_frun"
+                android:textColor="#D9B878"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

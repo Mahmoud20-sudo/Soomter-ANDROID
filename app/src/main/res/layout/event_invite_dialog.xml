@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_toRightOf="@+id/parent"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/cancel"
+        />
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dialog_rounded_bg"
+        android:minWidth="280dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/event_invite"
+            android:textColor="#808285"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/coming_soon_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/soon"
+            android:textStyle="bold"
+            android:textColor="#2B2B2B"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/coming_soon"
+            android:layout_height="50dp" />
+
+
+        <Button
+            android:id="@+id/button_close"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/rounded_white_view2"
+            android:backgroundTint="#000000"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:text="@string/close"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+</RelativeLayout>

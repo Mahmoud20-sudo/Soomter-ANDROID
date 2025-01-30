@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ads_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:id="@+id/notf_nav_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="77dp"
+        android:alpha="0.8"
+        android:background="#191919"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:translationZ="30dp"
+        android:visibility="visible">
+
+    </LinearLayout>
+
+    <com.soomter.LockableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5F5F5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/topbar_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:paddingBottom="3dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:id="@+id/bck_btn"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@mipmap/back" />
+
+                <TextView
+                    android:id="@+id/notf_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-6dp"
+                    android:text="@string/notifications"
+                    android:textColor="#f4f4f4"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/four_fots"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@mipmap/four_dots" />
+
+
+                <ImageView
+                    android:id="@+id/gear"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/four_fots"
+                    android:src="@mipmap/gear_icon" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/topmenu_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4F4F4"
+                android:paddingBottom="8dp"
+                android:elevation="3dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:id="@+id/menu_icon_ads"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/menu_icon" />
+
+                <TextView
+                    android:id="@+id/all_notf_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/menu_icon_ads"
+                    android:text="@string/all_notifications"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/delete_notf"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/delete_notf_txt"
+                    android:src="@mipmap/delete" />
+
+                <TextView
+                    android:id="@+id/delete_notf_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/delete_notifications"
+                    android:textColor="#000000"
+                    android:textSize="11sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/notf_progress"
+                    style="@style/Widget.AppCompat.ProgressBar"
+                    android:layout_width="30dp"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:layout_height="30dp"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/notifcations_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="15dp"></android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.soomter.LockableScrollView>
+</RelativeLayout>

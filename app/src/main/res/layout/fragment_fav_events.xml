@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/event_progress"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="30dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_height="30dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/events_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</LinearLayout>

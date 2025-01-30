@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PaginatedRecyclerView"><attr format="boolean" name="loadingEnabled"/><attr format="integer" name="loadingThreshold"/></declare-styleable>
+</resources>

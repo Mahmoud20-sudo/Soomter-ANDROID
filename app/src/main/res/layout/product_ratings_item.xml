@@ -1,0 +1,87 @@
+<!-- A CardView that contains a TextView -->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="5dp"
+    android:layoutDirection="ltr"
+    android:layout_marginLeft="5dp"
+    card_view:cardElevation="0dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="10dp"
+    card_view:contentPadding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-3dp"
+        android:gravity="left"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text=""
+        android:textColor="#5B6265"
+        android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.soomter.utils.RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:scaleX="-1"
+                app:automatic="fully"
+                app:isIndicator="false"
+                android:layout_marginTop="10dp"
+                app:numStars="5"
+                app:progress="@drawable/star_empty"
+                app:progressed="@drawable/gold_star"
+                app:rating="3.5"
+                app:spacing="5dp"
+                app:stepSize="2.5" />
+
+            <TextView
+                android:id="@+id/rating_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:includeFontPadding="false"
+                android:text="4.0"
+                android:textColor="#D9B878"
+                android:textSize="11.5sp" />
+
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/rating_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="left"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text=""
+        android:textColor="#7C8487"
+        android:textSize="13.3sp" />
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

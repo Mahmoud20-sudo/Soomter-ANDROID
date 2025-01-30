@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/branches_cont"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/joinus_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:text="@string/join_us"
+        android:textColor="#D9B878"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/joinus_brief_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="2dp"
+        android:gravity="right"
+        android:text="@string/joins_us_brief"
+        android:textColor="#414042"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_white_view2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/phone" />
+
+        <TextView
+            android:id="@+id/mobile_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="@string/join_us_now"
+
+            android:textColor="#414042"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/mobile_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/mob_num"
+            android:textColorHint="#BCBEC0"
+            android:textColor="#BCBEC0"
+            android:backgroundTint="#BCBEC0"
+            android:textSize="15sp"
+            app:backgroundTint="#BCBEC0" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_white_view2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/email" />
+
+        <TextView
+            android:id="@+id/email_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+
+            android:text="@string/join_email"
+            android:textColor="#414042"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/email_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="@string/your_email"
+            android:textColorHint="#BCBEC0"
+            android:backgroundTint="#BCBEC0"
+            android:textColor="#BCBEC0"
+            android:textSize="15sp"
+            app:backgroundTint="#BCBEC0" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reg_btn"
+        style="?android:textAppearanceSmall"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:includeFontPadding="false"
+        android:background="@drawable/rounded_white_view2"
+        android:text="@string/register"
+        android:backgroundTint="#000000"
+        android:textColor="#D9B777"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+</LinearLayout>

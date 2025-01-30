@@ -1,0 +1,9 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\esraa.nayel\Desktop\soomter\recyclerviewpaginated\src\main\AndroidManifest.xml:1:1-65
+INJECTED from C:\Users\esraa.nayel\Desktop\soomter\recyclerviewpaginated\src\main\AndroidManifest.xml:1:1-65
+INJECTED from C:\Users\esraa.nayel\Desktop\soomter\recyclerviewpaginated\src\main\AndroidManifest.xml:1:1-65
+	package
+		ADDED from C:\Users\esraa.nayel\Desktop\soomter\recyclerviewpaginated\src\main\AndroidManifest.xml:1:11-62
+		INJECTED from C:\Users\esraa.nayel\Desktop\soomter\recyclerviewpaginated\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\esraa.nayel\Desktop\soomter\recyclerviewpaginated\src\main\AndroidManifest.xml

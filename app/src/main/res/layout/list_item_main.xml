@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:layout_marginBottom="8dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="8dp"
+    android:layoutDirection="ltr">
+
+  <ImageView
+      android:id="@+id/list_item_genre_icon"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_gravity="center_vertical|left"
+      android:layout_marginLeft="@dimen/horizontal_margin"
+      tools:src="@mipmap/share" />
+
+  <TextView
+      android:id="@+id/list_item_genre_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical|left"
+      android:layout_marginLeft="15dp"
+      android:layout_weight="1"
+      android:gravity="center_vertical|left"
+      android:textSize="14sp"
+      android:textColor="#D9B878"
+      tools:text="Genre" />
+
+  <ImageView
+      android:id="@+id/list_item_genre_arrow"
+      android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:layout_gravity="center_vertical"
+      android:rotation="90"
+      android:layout_marginRight="@dimen/horizontal_margin"
+      android:src="@mipmap/arrow" />
+
+</LinearLayout>
+

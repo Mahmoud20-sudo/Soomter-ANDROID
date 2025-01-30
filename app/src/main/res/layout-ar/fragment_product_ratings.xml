@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:background="@android:color/transparent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/product_sismilar_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/evaluat"
+        android:textColor="#7c8487"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <com.soomter.utils.RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:scaleX="-1"
+            android:layout_marginTop="10dp"
+            app:automatic="fully"
+            app:isIndicator="false"
+            app:numStars="5"
+            app:progress="@drawable/star_empty"
+            app:progressed="@drawable/gold_star"
+            app:rating="0.0"
+            app:spacing="5dp"
+            app:stepSize="2.5" />
+
+        <TextView
+            android:id="@+id/rating_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:text=""
+            android:textColor="#D9B878"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/rating_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:text=""
+            android:textColor="#52595B"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/rating_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="4dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:text="@string/rating"
+            android:textColor="#7c8487"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="#BABBBC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rate_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="@string/rate"
+            android:textColor="#7c8487"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/edit" />
+
+        <TextView
+            android:id="@+id/rating_write_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:text="@string/write_rating"
+            android:textColor="#7c8487"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.soomter.utils.RatingBar
+        android:id="@+id/ratingBar_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:scaleX="-1"
+        app:automatic="fully"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:isIndicator="false"
+        android:layout_marginTop="10dp"
+        app:numStars="5"
+        app:progress="@drawable/star_empty"
+        app:progressed="@drawable/gold_star"
+        app:rating="0"
+        app:spacing="5dp"
+        app:stepSize="2.5" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/product_ratings_rv"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:elevation="0dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

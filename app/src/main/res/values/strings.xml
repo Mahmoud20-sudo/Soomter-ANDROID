@@ -1,0 +1,344 @@
+<resources>
+    <string name="app_name">Soomter</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_send">Choose sending way fisrt!</string>
+
+
+    <string name="choose_country">Please choose a country</string>
+    <string name="ksa">Saudi Arabia Kingdom</string>
+    <string name="uae">United Arab Emirates</string>
+    <string name="kuwait">Kuwait</string>
+    <string name="title_activity_login" translatable="false">Sign in</string>
+
+
+    <string name="welcome">Welcome to Soomter</string>
+    <string name="mail">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_pass">Forgot password ?</string>
+    <string name="signin_later">Login later</string>
+    <string name="no_account">Have no account</string>
+    <string name="reg_nw">Register now</string>
+    <string name="login">Log in</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_invalid_password">Invalid password</string>
+
+    <string name="institue_reg">Institute Register</string>
+    <string name="person_reg">Person Register</string>
+
+    <string name="register">Register</string>
+    <string name="mobile">Mobile number</string>
+    <string name="build_name">Institute name</string>
+    <string name="build_name_en">Institute name (English)</string>
+    <string name="build_name_ar">Institute name (Arabic)</string>
+    <string name="user_name">User name</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+
+    <string name="first_name_en">First name (English)</string>
+    <string name="first_name_ar">First name (Arabic)</string>
+    <string name="last_name_en">Last name (English)</string>
+    <string name="last_name_ar">Last name (Arabic)</string>
+
+    <string name="search_for_chance">Looking for your chance with celebrities</string>
+    <string name="search">Search</string>
+
+    <string name="home">Home</string>
+    <string name="notifications">Notifications</string>
+    <string name="products">Products</string>
+    <string name="my_account">Account</string>
+
+    <string name="the_categories">Categories</string>
+    <string name="most_view">Most Viewed</string>
+    <string name="category_order">View by catergory</string>
+    <string name="activity_order">View by activity</string>
+    <string name="show_all">Show all</string>
+    <string name="add_build">Add Institute</string>
+    <string name="cat_follow">Follow</string>
+    <string name="cat_price">Price</string>
+
+    <string name="it">Communication &amp; Information</string>
+    <string name="furn">Furnitures</string>
+    <string name="home_toolss">Houseware &amp; Kitchen</string>
+
+
+    <string name="etisalat">Communication companies</string>
+    <string name="wood_frun">Wooden furnitures</string>
+    <string name="electric_devices">Electric devices</string>
+
+    <string name="categories">Categories</string>
+    <string name="product">Products</string>
+    <string name="ads">Ads</string>
+
+    <string name="network_issue">تحقق من إتصالاك بالانترنت اولاً!</string>
+
+    <string name="ads_title">Ads</string>
+    <string name="all_ads">All ads</string>
+    <string name="add_ad">Add ad</string>
+    <string name="ad_tabe">Advertisement</string>
+    <string name="add_special">Speical ads</string>
+    <string name="ad_photos">Photo ads</string>
+    <string name="ad_videos">Video ads</string>
+    <string name="ad_picked">Picked ads</string>
+    <string name="ad_text">Text ads</string>
+    <string name="symbol">Symbol</string>
+    <string name="img">Image</string>
+
+    <string name="home_nav">Home</string>
+    <string name="ad_special_nav">Special ads</string>
+    <string name="ad_photo_nav">Photo ads</string>
+    <string name="ad_video_nav">Video ads</string>
+    <string name="ad_text_nav">Text ads</string>
+    <string name="ad_tt">The advertised establishment</string>
+    <string name="report">Report</string>
+
+    <string name="loading">Loading...</string>
+    <string name="no_inform">No information</string>
+
+    <string name="all_events">All events</string>
+    <string name="fav">Favourite</string>
+    <string name="add_event">Add event</string>
+    <string name="now_happen">Happening now</string>
+    <string name="event_desc">Event description</string>
+    <string name="the_catgeory">Category</string>
+
+    <string name="tenders">Tenders</string>
+    <string name="auctions">Auctions</string>
+    <string name="events">Events</string>
+
+    <string name="error">Error occured, try again later!</string>
+    <string name="success">Successfully Registered!</string>
+    <string name="wrong_user">Check your credentials!</string>
+    <string name="existed_user">This profile already exists!</string>
+
+
+    <string name="no_result">No result!</string>
+
+    <string name="all_cities">All Cities</string>
+    <string name="all_activities">All Activities</string>
+
+    <string name="show_by_cat">Show by Catrgory</string>
+    <string name="show_by_city">Show by City</string>
+
+    <string name="bank_loc">Bank Location</string>
+
+    <string name="all_catgs">All categories</string>
+    <string name="cart">Cart</string>
+
+    <string name="categories_vogue">Categories have vogue</string>
+    <string name="best_choosen">Best Picks</string>
+
+    <string name="best_sells">Best sellerً</string>
+    <string name="special_trades">Featured Brands</string>
+    <string name="prod_more">Explore more</string>
+
+    <string name="prod_price">Price</string>
+    <string name="rial">Riyal</string>
+    <string name="the_rial">Riyal</string>
+
+    <string name="from">From</string>
+    <string name="to">To</string>
+
+    <string name="trade">Brand</string>
+    <string name="type">Type</string>
+    <string name="discount">Discount</string>
+
+    <string name="all_types">All types</string>
+    <string name="all_trads">All brands</string>
+
+    <string name="save">Save</string>
+
+    <string name="advanced_search">Advanced search</string>
+
+    <string name="happened">Happened</string>
+    <string name="later">Not yet</string>
+
+    <string name="owner">If you own this property click here</string>
+
+
+    <string name="details">Facility details</string>
+    <string name="branches">Facility branches</string>
+    <string name="join_us">Join us</string>
+
+    <string name="the_ads">Ads</string>
+    <string name="the_events">Events</string>
+
+    <string name="data">Details</string>
+    <string name="inform">Informations</string>
+    <string name="picked_fc">Picked facilities</string>
+    <string name="unified">Unified number</string>
+    <string name="emobile">Mobile</string>
+    <string name="phone">Phone</string>
+    <string name="fax">Fax</string>
+    <string name="post_code">Postal code</string>
+    <string name="site">Website</string>
+    <string name="email">Email</string>
+
+    <string name="postal">Commercial Register</string>
+    <string name="fc_category">Classification</string>
+    <string name="fc_activity">Facility\'s activity</string>
+    <string name="fc_address">Headquarters</string>
+    <string name="fc_branches">Branches number</string>
+    <string name="fc_timeline">Work hours</string>
+
+    <string name="more">More</string>
+    <string name="address">Address</string>
+
+    <string name="mob_num">Your mobile number</string>
+    <string name="your_email">Your email</string>
+    <string name="join_email">Register your email</string>
+    <string name="join_us_now">Register your mobile number to receive all of our news</string>
+    <string name="join_us_txt">Subscribe with us</string>
+    <string name="joins_us_brief">A service for our customers who want to communicate with us to know our offers</string>
+
+    <string name="no_product">There are currently no products</string>
+    <string name="no_branches">There are currently no branches</string>
+    <string name="no_details">There are currently no details</string>
+    <string name="no_ads">There are currently no ads</string>
+    <string name="no_events">There are currently no events</string>
+
+    <string name="no_product_brief">This facility has not added any of its products yet.\n may be adding its products soon</string>
+    <string name="no_branches_brief">This facility has not added any of its branches yet.\n may be adding its branches soon</string>
+    <string name="no_details_brief">This facility has not added any of its details yet.\n may be adding its details soon</string>
+    <string name="no_ads_brief">This facility has not added any of its ads yet.\n may be adding its ads soon</string>
+    <string name="no_events_brief">This facility has not added any of its events yet.\n may be adding its events soon</string>
+
+    <string name="trads">Trades</string>
+
+    <string name="ev_details">Organizer details</string>
+    <string name="ev_loc">Event location</string>
+    <string name="orgnizers">Organizers</string>
+
+    <string name="ev_reg">Register</string>
+    <string name="invite">Facilities invite</string>
+
+    <string name="no_org">No organizers yet</string>
+
+    <string name="the_cities">Cities</string>
+
+    <string-array name="ads_list">
+        <item>@string/all_ads</item>
+        <item>Text ad</item>
+        <item>Photo ad</item>
+        <item>Video ad</item>
+    </string-array>
+
+    <string name="georgian">Georgian</string>
+    <string name="hijri">Hijri</string>
+
+    <string name="from_date">Date from</string>
+    <string name="to_date">Date to</string>
+
+    <string name="date_validate">Pick start date first!</string>
+
+    <string name="forgot_password">Forgot password</string>
+    <string name="forgot_user">Forgot username</string>
+    <string name="choose_send_op">Please select submission method</string>
+    <string name="mail_verify">Via email</string>
+    <string name="mobile_sms">Send a message via mobile</string>
+    <string name="send">Send</string>
+    <string name="continue_shopping">Continue shopping</string>
+
+    <string name="close">Close</string>
+    <string name="recover">Account recovery</string>
+    <string name="recover_success">Data sent successfully</string>
+
+    <string name="delete_notifications">Delete all notifications</string>
+    <string name="all_notifications">All notifications</string>
+
+    <string name="pick_color">Pick a color</string>
+    <string name="color">Color</string>
+    <string name="quantity">Quantity</string>
+    <string name="size">Size</string>
+    <string name="add_cart">Add to cart</string>
+    <string name="seller">Seller:</string>
+
+    <string name="evaluat">General description</string>
+    <string name="desc">Description</string>
+    <string name="prop">Ratings</string>
+
+    <string name="product_advntgs">Product Features</string>
+    <string name="product_similar">Similar products</string>
+
+    <string name="rating">Rating</string>
+    <string name="write_rating">Write your rating</string>
+    <string name="rate">Rate product</string>
+
+    <string name="advntgs">Product Pros</string>
+    <string name="disadvntgs">Product cons</string>
+    <string name="comment">Comment</string>
+
+    <string name="reg_event">Record your attendance at the event</string>
+
+    <string name="event_invite">Call facilities</string>
+    <string name="event_favourite">Favourite events</string>
+
+    <string name="soon">Coming soon</string>
+    <string name="rquest_details">Request details</string>
+    <string name="own">Request to own an institute</string>
+    <string name="report_send">Report abuse</string>
+    <string name="name">Name</string>
+    <string name="mob">Mobile</string>
+    <string name="report_details">Complaint details</string>
+    <string name="report_title">complaint</string>
+
+    <string name="report_succes">Report was successfully sent</string>
+    <string name="free_ship">Free shipping</string>
+
+    <string name="ad">Ad</string>
+    <string name="comp_ad_text">Public and Private Placement - Mergers and Acquisitions - Services of the Bureau</string>
+    <string name="require_login">This operation requires login!ّ</string>
+
+    <string name="need_login">Login first!</string>
+
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="serch_result">Search result</string>
+    <string name="added_success">Product added successfully</string>
+
+    <string name="free_shipping">Free Shipping</string>
+    <string name="invalid_quant">Please enter a valid quantity</string>
+
+    <string name="product_title">product</string>
+    <string name="product_own">You have</string>
+    <string name="goods_price">Products price</string>    
+    <string name="shipping_price">Shipping charges</string>
+    <string name="total_count">Order total</string>
+    <string name="continou_checkout">Checkout</string>
+
+    <string name="empty_cart">Your cart is empty</string>
+    <string name="no_prods_yet">You have not added any products yet</string>
+    <string name="open_prods">Browse our featured products</string>
+
+    <string name="shipment_address">Shipping address</string>
+        
+    <string name="add_address"> Add shipping address </string>
+    <string name="shipment_details">Shipment details</string>
+    <string name="mobile_address">Mobile:</string>
+
+    <string name="payment_summary">Payment summary</string>
+    <string name="deliver_charge">Delivery charge:</string>
+    <string name="total">Total:</string>
+    <string name="confrm">Confirm</string>
+
+
+    <string name="success_delete">Product was successfully removed</string>
+    <string name="shopping_cart"> Shopping cart</string>
+    <string name="add_edit_address">Edit / Add Shipping Address</string>
+    <string name="client_name">Recipient name</string>
+    <string name="contact_numb">Contact number</string>
+
+
+    <string name="confirm_success">Order successfully confirmed</string>
+    <string name="shipped_to">Shipped to</string>
+    <string name="getit_on">Get it on</string>
+</resources>

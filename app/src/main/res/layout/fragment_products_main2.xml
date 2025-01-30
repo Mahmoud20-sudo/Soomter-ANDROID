@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <include android:id="@+id/nodata_view"
+        android:visibility="gone"
+        layout="@layout/fragment_company_nodata"></include>
+
+    <RelativeLayout
+        android:id="@+id/serch_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_grey_view">
+
+            <ImageView
+                android:id="@+id/ss"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:rotation="0"
+                android:src="@mipmap/search_icon"
+                android:tint="#96969B" />
+
+            <ImageView
+                android:id="@+id/vii"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@+id/ss"
+                android:background="#D9B878" />
+
+            <EditText
+                android:id="@+id/serch_ed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="-5dp"
+                android:layout_toLeftOf="@+id/settings_img"
+                android:layout_toRightOf="@+id/vii"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:hint="@string/search"
+                android:maxLines="1"
+                android:padding="1dp"
+                android:textColor="#96969B"
+                android:textColorHint="#96969B"
+                android:textSize="15sp" />
+
+
+            <ImageView
+                android:id="@+id/settings_img"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/options_icon"
+                android:tint="#9A9A9E" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="10dp">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/products_rv"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

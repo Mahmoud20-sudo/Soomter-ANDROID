@@ -1,0 +1,226 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/rounded_grey_view">
+
+            <ImageView
+                android:id="@+id/ss"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:rotation="90"
+                android:src="@mipmap/search_icon"
+                android:tint="#96969B" />
+
+            <ImageView
+                android:id="@+id/vii"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="9dp"
+                android:layout_toLeftOf="@+id/ss"
+                android:background="#D9B878" />
+
+            <EditText
+                android:id="@+id/serch_ed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="-5dp"
+                android:layout_toLeftOf="@+id/vii"
+                android:layout_toRightOf="@+id/settings_img"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/search"
+
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="1dp"
+                android:textColor="#96969B"
+                android:textColorHint="#96969B"
+                android:textSize="15sp" />
+
+
+            <ImageView
+                android:id="@+id/settings_img"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/options_icon"
+                android:tint="#9A9A9E" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="25dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/best_seller_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/best_sells"
+                android:textColor="#89898E"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/best_seller_txt_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="@string/show_all"
+                android:textColor="#D9B898"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:id="@+id/best_seller_rv"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            layout="@layout/best_seller_item"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="30dp"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="30dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="25dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/special_trades_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/special_trades"
+                android:textColor="#89898E"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/special_trades_txt_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="@string/show_all"
+                android:textColor="#D9B898"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:id="@+id/trads_rv"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            layout="@layout/best_seller_item"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+        <ProgressBar
+            android:id="@+id/trads_progress"
+            android:layout_width="30dp"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="30dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="25dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/explore_more_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/prod_more"
+                android:textColor="#89898E"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/explore_more_txt_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="@string/show_all"
+                android:textColor="#D9B898"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:id="@+id/more_rv"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            layout="@layout/best_seller_item"
+            android:layout_marginBottom="15dp"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+        <ProgressBar
+            android:id="@+id/more_progress"
+            android:layout_width="30dp"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

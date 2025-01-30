@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ads_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layoutDirection="rtl">
+
+
+    <LinearLayout
+        android:id="@+id/product_nav_scroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="74dp"
+        android:alpha="0.8"
+        android:background="#191919"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:translationZ="30dp"
+        android:visibility="visible">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/nav_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <com.soomter.LockableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5F5F5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:paddingBottom="3dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:id="@+id/bck_btn"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@mipmap/back" />
+
+                <TextView
+                    android:id="@+id/products_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-6dp"
+                    android:text="@string/product"
+                    android:textColor="#f4f4f4"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/four_fots"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@mipmap/four_dots" />
+
+
+                <ImageView
+                    android:id="@+id/gear"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/four_fots"
+                    android:src="@mipmap/gear_icon" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/product_top_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4F4F4"
+                android:elevation="5dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:id="@+id/menu_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/menu_icon" />
+
+                <TextView
+                    android:id="@+id/all_products_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="-2dp"
+                    android:layout_toLeftOf="@+id/menu_icon"
+                    android:text="@string/all_catgs"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/fav_img"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/products_fav"
+                    android:src="@mipmap/white_star" />
+
+
+                <TextView
+                    android:id="@+id/products_fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/cart_icon"
+                    android:text="@string/fav"
+                    android:textColor="#000000"
+                    android:textSize="11sp" />
+
+                <ImageView
+                    android:id="@+id/cart_icon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/cart_txt"
+                    android:src="@mipmap/cart" />
+
+                <TextView
+                    android:id="@+id/cart_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/cart"
+                    android:textColor="#000000"
+                    android:textSize="11sp" />
+
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/products_fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+
+        </LinearLayout>
+    </com.soomter.LockableScrollView>
+</RelativeLayout>

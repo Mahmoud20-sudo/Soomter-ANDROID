@@ -1,0 +1,48 @@
+<com.github.captain_miao.optroundcardview.OptRoundCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_card_view"
+    android:layout_width="wrap_content"
+    android:layout_weight="1"
+    android:layout_height="100dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    app:optRoundCardBottomEdges="true"
+    app:optRoundCardCornerRadius="5dp"
+    android:layout_marginBottom="3dp"
+    android:layout_marginTop="5dp"
+    app:optRoundCardElevation="5dp"
+    app:optRoundCardLeftBottomCorner="true"
+    app:optRoundCardRightBottomCorner="true">
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/etisalat_compnies_img"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <FrameLayout
+            android:layout_width="65dp"
+            android:background="@drawable/corners_edges_view"
+            android:backgroundTint="#1F1F1F"
+            android:alpha="0.65"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:text="شركات الإتصالات"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="-5dp"
+                android:textColor="#D9B878"
+                android:layout_height="wrap_content" />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+</com.github.captain_miao.optroundcardview.OptRoundCardView>

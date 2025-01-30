@@ -1,0 +1,106 @@
+<!-- A CardView that contains a TextView -->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:layout_weight="1"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_lightgrey_view"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/add_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/play_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#F1F1F3"
+                android:scaleType="center"
+                android:src="@mipmap/play"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ad_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#F1F1F3"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ins_add_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#F1F1F3"
+                android:paddingBottom="15dp"
+                android:scaleType="center"
+                android:src="@mipmap/insitute_ad_ogo"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/ad_symbol_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ins_add_icon"
+                android:layout_marginRight="43dp"
+                android:layout_marginTop="-35dp"
+                android:text="@string/symbol"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:rotation="270"
+                android:id="@+id/special_ads_fav_icon"
+                android:src="@mipmap/fav_off_corner" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/vii"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="4dp"
+                android:layout_toLeftOf="@+id/ss"
+                android:background="#D9B878" />
+
+            <TextView
+                android:id="@+id/ad_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:ellipsize="end"
+                android:paddingBottom="2dp"
+                android:gravity="left"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:textColor="#231F20"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

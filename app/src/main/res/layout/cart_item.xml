@@ -1,0 +1,184 @@
+<!-- A CardView that contains a TextView -->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="118dp"
+    android:layout_marginBottom="10dp"
+    android:layoutDirection="ltr"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="0dp"
+    card_view:contentPaddingBottom="5dp"
+    card_view:contentPaddingLeft="10dp"
+    card_view:contentPaddingRight="10dp"
+    card_view:contentPaddingTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layoutDirection="ltr"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/delete_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/delete" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/delete_img"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/product_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/test_phone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:textColor="#231F20"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/seller_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:text="@string/seller"
+                        android:textColor="#231F20"
+                        android:textSize="11.5sp" />
+
+                    <TextView
+                        android:id="@+id/seller_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:textColor="#D9B878"
+                        android:textSize="11.5sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/quantity_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginTop="4dp"
+                        android:gravity="right"
+                        android:text="@string/quantity"
+                        android:textColor="#231F20"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/minus_tv"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/red_circle"
+                            android:backgroundTint="#FFDB92"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="-" />
+
+                        <EditText
+                            android:id="@+id/count_ed"
+                            android:layout_width="30dp"
+                            android:layout_height="23dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:background="@drawable/rounded_white_view"
+                            android:backgroundTint="#F3F4F4"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:text="1"
+                            android:textColor="#231F20"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/plus_tv"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/red_circle"
+                            android:backgroundTint="#FFDB92"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="+" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="4dp"
+                    android:gravity="left"
+                    android:text=""
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/free_ship_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="1dp"
+                    android:gravity="left"
+                    android:text="@string/free_shipping"
+                    android:textColor="#D9B878"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

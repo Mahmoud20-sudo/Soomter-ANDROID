@@ -1,0 +1,338 @@
+<resources>
+    <string name="app_name">سومتر</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="choose_country">يرجى إختيار البلد</string>
+    <string name="ksa">المملكة العربية السعودية</string>
+    <string name="uae">الإمارات العربية المتحدة</string>
+    <string name="kuwait">الكويت</string>
+
+    <string name="welcome">مرحباً بكم في سومتر</string>
+    <string name="mail">البريد الإلكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="forgot_pass">هل نسيت كلمة السر ؟</string>
+    <string name="signin_later">التسجيل لاحقاً</string>
+    <string name="no_account">ليس لديك حساب</string>
+    <string name="reg_nw">سجل الآن</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="error_field_required">تأكد من ملْ الحقل المطلوب</string>
+    <string name="error_invalid_email">الإيميل غير صالح</string>
+    <string name="error_invalid_password">تأكد من كلمة السر</string>
+
+    <string name="institue_reg">تسجيل منشأة</string>
+    <string name="person_reg">تسجيل أفراد</string>
+
+    <string name="register">تسجيل</string>
+    <string name="mobile">رقم الجوال</string>
+    <string name="build_name">أسم المنشأة</string>
+    <string name="build_name_en">أسم المنشأة بالإنجليزية</string>
+    <string name="build_name_ar">أسم المنشأة بالعربية</string>
+    <string name="user_name">أسم المستخدم</string>
+    <string name="first_name">الأسم الأول</string>
+    <string name="first_name_en">الأسم الأول بالإنجليزية</string>
+    <string name="first_name_ar">الأسم الأول بالعربية</string>
+    <string name="last_name">الأسم الأخير</string>
+    <string name="last_name_en">الأسم الأخير بالإنجليزية</string>
+    <string name="last_name_ar">الأسم الأخير بالعربية</string>
+
+    <string name="search_for_chance">أبحث عن فرصتك مع المشاهير</string>
+    <string name="search">بحث</string>
+
+    <string name="home">الرئيسية</string>
+    <string name="notifications">التنبيهات</string>
+    <string name="products">المنتجات</string>
+    <string name="my_account">حسابي</string>
+
+    <string name="categories">تصنيفات</string>
+    <string name="the_categories">التصنيفات</string>
+    <string name="most_view">الأكثر مشاهدة</string>
+    <string name="category_order">عرض حسب التصنيف</string>
+    <string name="activity_order">عرض حسب النشاط</string>
+    <string name="show_all">عرض الكل</string>
+    <string name="add_build">إضافة منشأة</string>
+    <string name="cat_follow">متابعة</string>
+    <string name="cat_price">عرض سعر</string>
+    <string name="it">إتصالات ومعلومات</string>
+    <string name="furn">أثاث ومفروشات</string>
+    <string name="home_toolss">أدوات منزلية ومطبخ</string>
+
+
+    <string name="etisalat">شركات الإتصالات</string>
+    <string name="wood_frun">أثاث خشبي</string>
+    <string name="electric_devices">أجهزة كهربائية</string>
+
+
+    <string name="product">منتجات</string>
+    <string name="ads">إعلانات</string>
+
+    <string name="ad">إعلان</string>
+
+    <string name="network_issue">تحقق من إتصالاك بالانترنت اولاً!</string>
+    <string name="error">حدث خظأ,حاول مرة أخرى لاحقاً!</string>
+    <string name="wrong_user">تأكد من بيانات الدخول</string>
+
+    <string name="no_result">لا توجد نتائج</string>
+    <string name="existed_user">هذا المستخدم موجود بالفعل!</string>
+    <string name="success">تم التسجيل بنجاح!</string>
+
+    <string name="tenders">مناقصات</string>
+    <string name="auctions">مزادات</string>
+    <string name="events">فعاليات</string>
+
+    <string name="all_cities">جميع المدن</string>
+    <string name="all_activities">جميع الأنشطة</string>
+
+    <string name="show_by_cat">عرض حسب النشاط</string>
+    <string name="show_by_city">عرض حسب المدينة</string>
+
+    <string name="ads_title">إعلانات</string>
+    <string name="all_ads">جميع الإعلانات</string>
+    <string name="add_ad">إضافة إعلان</string>
+    <string name="ad_tabe">شريط إعلان</string>
+    <string name="add_special">إعلانات المميزة</string>
+    <string name="ad_photos">إعلانات صور</string>
+    <string name="ad_videos">إعلانات فيديو</string>
+    <string name="ad_picked">إعلانات مختارة</string>
+    <string name="ad_text">إعلانات نصية</string>
+    <string name="symbol">شعار</string>
+    <string name="img">صورة</string>
+
+    <string name="home_nav">الصفحة الرئيسية</string>
+    <string name="ad_special_nav">إعلانات مميزة</string>
+    <string name="ad_photo_nav">إعلانات صور</string>
+    <string name="ad_video_nav">إعلانات فيديو</string>
+    <string name="ad_text_nav">إعلانات نصية</string>
+    <string name="ad_tt">المنشأة المعلنة</string>
+    <string name="report">الإبلاغ عن إساءة</string>
+
+    <string name="loading">جاري التحميل..</string>
+    <string name="no_inform">لا يوجد معلومات</string>
+
+    <string name="all_events">جميع الفعاليات</string>
+    <string name="fav">المفضلة</string>
+    <string name="add_event">أضف فعالية</string>
+    <string name="now_happen">يحدث الآن</string>
+    <string name="event_desc">وصف الفعالية</string>
+    <string name="the_catgeory">التصنيف</string>
+
+    <string name="bank_loc">مقر البنك</string>
+
+    <string name="all_catgs">جميع الفئات</string>
+    <string name="cart">العربة</string>
+
+    <string name="categories_vogue">فئات لها رواج</string>
+    <string name="best_choosen">أفضل المختارات</string>
+
+    <string name="best_sells">الأكثر مبيعاً</string>
+    <string name="special_trades">ماركات مميزة</string>
+    <string name="prod_more">استكشاف المزيد</string>
+
+    <string name="prod_price">السعر</string>
+    <string name="rial">ريال</string>
+    <string name="the_rial">(الريال)</string>
+
+
+    <string name="from">من</string>
+    <string name="to">الى</string>
+
+    <string name="trade">الماركة</string>
+    <string name="type">النوع</string>
+    <string name="discount">خصم</string>
+
+    <string name="all_types">جميع الأنواع</string>
+    <string name="all_trads">جميع الماركات</string>
+    <string name="save">حفظ</string>
+
+    <string name="advanced_search">بحث متقدم</string>
+
+    <string name="happened">إنتهى</string>
+    <string name="later">لم يحدث بعد</string>
+
+    <string name="owner">إذا كنت تمتلك هذه المنشأة إضغط هنا</string>
+
+    <string name="details">تفاصيل المنشأة</string>
+    <string name="branches">فروع المنشأة</string>
+    <string name="join_us">خدمة إشترك معنا</string>
+    <string name="the_ads">الإعلانات</string>
+    <string name="the_events">الأحداث</string>
+
+    <string name="data">البيانات</string>
+    <string name="inform">المعلومات</string>
+    <string name="picked_fc">منشاّت مختارة</string>
+    <string name="unified">الرقم الموحد</string>
+    <string name="emobile">جوال</string>
+    <string name="phone">هاتف</string>
+    <string name="fax">فاكس</string>
+    <string name="post_code">ص ب</string>
+    <string name="site">الموقع الإلكتروني</string>
+    <string name="email">البريد الإلكتروني</string>
+
+    <string name="postal">السجل التجاري</string>
+    <string name="fc_category">تصنيف المنشأة</string>
+    <string name="fc_activity">نشاط المنشأة</string>
+    <string name="fc_address">المقر الرئيسي</string>
+    <string name="fc_branches">عدد فروع المنشأة</string>
+    <string name="fc_timeline">أوقات العمل</string>
+
+    <string name="more">المزيد</string>
+    <string name="address">العنوان</string>
+
+    <string name="mob_num">رقم جوالك</string>
+    <string name="your_email">بريدك الإلكتروني</string>
+    <string name="join_email">سجل بريدك الإلكتروني</string>
+    <string name="join_us_now">سجل رقم جوالك ليصلك كل جديدنا</string>
+    <string name="join_us_txt">خدمة اشترك معنا</string>
+    <string name="joins_us_brief">هيا خدمة مقدمة لعملائنا الذين يرغبون في أن نتواصل معهم لتقديم عروضنا</string>
+
+    <string name="no_product">لا يوجد منتجات حالياً</string>
+    <string name="no_branches">لا يوجد فروع حالياً</string>
+    <string name="no_details">لا يوجد تفاصيل حالياً</string>
+    <string name="no_ads">لا يوجد إعلانات حالياً</string>
+    <string name="no_events">لا يوجد أحداث حالياً</string>
+
+
+    <string name="no_product_brief">لم تقم المنشأة بإضافة أي من منتجاتها إلى الآن.\nربما تقوم هذه المنشأة بإضافة منتجاتها قريباً</string>
+    <string name="no_branches_brief">لم تقم المنشأة بإضافة أي من فروعها إلى الآن.\nربما تقوم هذه المنشأة بإضافة فروعها قريباً</string>
+    <string name="no_details_brief">لم تقم المنشأة بإضافة أي من تفاصيلها إلى الآن.\nربما تقوم هذه المنشأة بإضافة منتجاتها قريباً</string>
+    <string name="no_ads_brief">لم تقم المنشأة بإضافة أي من إعلاناتها إلى الآن.\nربما تقوم هذه المنشأة بإضافة إعلاناتها قريباً</string>
+    <string name="no_events_brief">لم تقم المنشأة بإضافة أي من فعالياتها إلى الآن.\nربما تقوم هذه المنشأة بإضافة فعاليتها قريباً</string>
+
+    <string name="trads">ماركات</string>
+
+    <string name="ev_details">بيانات منظم الفعالية</string>
+    <string name="ev_loc">موقع الفعالية</string>
+    <string name="orgnizers">الجهات المنظمة</string>
+
+    <string name="ev_reg">سجل حضورك</string>
+    <string name="invite">دعوة المنشاّت</string>
+
+    <string name="no_org">لا يوجد منظمون حالياً</string>
+
+    <string name="the_cities">المدن</string>
+
+    <string-array name="ads_list">
+        <item>@string/all_ads</item>
+        <item>إعلان نصي</item>
+        <item>إعلان مصور</item>
+        <item>إعلان فيديو</item>
+    </string-array>
+
+    <string name="georgian">ميلادي</string>
+    <string name="hijri">هجري</string>
+
+    <string name="from_date">من تاريخ</string>
+    <string name="to_date">إلى تاريخ</string>
+
+    <string name="date_validate">من فضلك احتر تاريخ البداية اولاً</string>
+
+    <string name="forgot_password">نسيت كلمة المرور</string>
+    <string name="forgot_user">نسيت أسم المستخدم</string>
+    <string name="choose_send_op">من فضلك أختر طريقة الإرسال</string>
+    <string name="mail_verify">عن طريق البريد الإلكتروني</string>
+    <string name="mobile_sms">إرسال رسالة عبر الجوال</string>
+    <string name="send">إرسال</string>
+    <string name="close">إغلاق</string>
+    <string name="recover">إستعادة الحساب</string>
+    <string name="continue_shopping">متابعة التسوق</string>
+
+    <string name="choose_send">أختر طريقة الإرسال اولاً</string>
+    <string name="recover_success">تم إرسال البيانات بنجاح</string>
+
+    <string name="delete_notifications">حذف كل التنبيهات</string>
+    <string name="all_notifications">جميع التنبيهات</string>
+
+    <string name="pick_color">أختر لون</string>
+    <string name="color">اللون</string>
+    <string name="quantity">الكمية</string>
+    <string name="size">الحجم</string>
+    <string name="add_cart">أضف إلى عربة التسوق</string>
+    <string name="seller">البائع:</string>
+
+    <string name="evaluat">تقييمات المنتج</string>
+    <string name="desc">وصف عام</string>
+    <string name="prop">خصائص المنتج</string>
+
+    <string name="product_advntgs">مميزات المنتج</string>
+    <string name="product_similar">منتجات مشابهة</string>
+
+    <string name="rating">تقييم</string>
+    <string name="write_rating">اكتب تقييمك</string>
+    <string name="rate">قيم المنتج</string>
+
+
+    <string name="soon">قريباً</string>
+    <string name="event_invite">دعوة المنشآت</string>
+    <string name="reg_event">سجل حضورك في الفعالية</string>
+    <string name="advntgs">إيجابيات المنتج</string>
+    <string name="disadvntgs">سلبيات المنتج</string>
+    <string name="comment">تعليق</string>
+    <string name="free_ship">الشحن مجاني</string>
+
+    <string name="event_favourite">الفعاليات المفضلة</string>
+
+    <string name="rquest_details">تفاصيل الطلب</string>
+    <string name="own">طلب تملك حساب منشأة</string>
+    <string name="report_send">الإبلاغ عن إساءة</string>
+    <string name="name">الإسم</string>
+    <string name="mob">الجوال</string>
+    <string name="report_details">تفاصيل الشكوى</string>
+    <string name="report_title">الشكوى</string>
+
+    <string name="report_succes">تم إرسال الشكوى بنجاح</string>
+
+    <string name="require_login">من فضلك سجل دخولك اولا!ّ</string>
+
+    <string name="need_login">قم بتسجيل دخولك اولاً!</string>
+
+    <string name="comp_ad_text">الإكتتابات العامة والخاصة-الإندماج والإستحواذ-خدمات الديوان</string>
+
+    <string name="ok">موافق</string>
+    <string name="cancel">إلغاء</string>
+
+    <string name="serch_result">نتائج البحث</string>
+    <string name="added_success">تم إضافة المنتج بنجاح</string>
+
+    <string name="free_shipping">مشمول بالشحن المجاني</string>
+    <string name="invalid_quant">برجاء إدخال كمية صالحة</string>
+
+    <string name="product_title">منتج</string>
+    <string name="product_own">لديك عدد</string>
+    <string name="goods_price">حساب السلع:</string>
+    <string name="shipping_price">رسوم الشحن:</string>
+    <string name="total_count">مجموع الطلبية</string>
+    <string name="continou_checkout">إستكمال عملية الشراء</string>
+
+    <string name="empty_cart">عربة التسوق فارغة</string>
+    <string name="no_prods_yet">لم تقم بإضافة أي منتجات إلى الآن</string>
+    <string name="open_prods">تصفح منتجاتنا المميزة</string>
+
+    <string name="shipment_address">عنوان الشحن</string>
+    <string name="add_address">إضافة عنوان الشحن</string>
+    <string name="shipment_details">تفاصيل الشحنة</string>
+    <string name="mobile_address">جوال:</string>
+
+    <string name="payment_summary">ملخص الدفع</string>
+    <string name="deliver_charge">رسوم الدفع عند الإستلام:</string>
+    <string name="total">المجموع الاجمالي:</string>
+    <string name="confrm">تأكيد الطلب</string>
+
+    <string name="success_delete">تم إزالة المنتج بنجاح</string>
+    <string name="shopping_cart">عربة التسوق</string>
+    <string name="add_edit_address">تعديل / إضافة عنوان الشحن</string>
+    <string name="client_name">إسم المستلم</string>
+    <string name="contact_numb">رقم التواصل</string>
+
+    <string name="shipped_to">تشحن إلى</string>
+    <string name="getit_on">أحصل عليها يوم</string>
+
+    <string name="confirm_success">تم تأكيد الطلب بنجاح</string>
+</resources>
